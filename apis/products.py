@@ -7,7 +7,6 @@ from utils.db_config import get_db_connection
 products_bp = Blueprint('product', __name__)
 
 # Ruta para ver productos
-
 @products_bp.route('/productos', methods=['GET'])
 def obtener_productos():
     """Obtiene todos los productos de la base de datos."""
